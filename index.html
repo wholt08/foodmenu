@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Scout Cantina">
+    <meta name="keywords" content="food, recipes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cantina Scout</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+        <div class="container">
+            <!--Logo
+            <div class="header-left">
+                <a href="./index.html">
+                    <img src="img/cantinascoutlogo.png" alt="Cantina Scout Logo">
+                </a>
+                <p class="tagline">Delicious Recipes & Restaurant Menus</p>
+            </div>-->
+            <div class="header-banner">
+                <img src="img/Scout Cantina Banner.png" alt="Delicious Food"> 
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Categories Filter Section Begin -->
+    <div id="menu" class="categories-filter-section spad">
+        <div class="menu-banner">
+            <h2>Our Menu</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="filter-item">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".mostpopular">Scout's Favorites</li>
+                            <li data-filter=".breakfast">Breakfast</li>
+                            <li data-filter=".lunch">Lunch</li>
+                            <li data-filter=".dinner">Dinner</li>
+                            <li data-filter=".snacks">Snacks</li>
+                            <li data-filter=".healthy">Healthy</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cf-filter" id="category-filter">
+                <div class="cf-item mix all mostpopular card">
+                    <div class="cf-item-pic">
+                        <img src="img/mexicanpizza.jpg" alt="Mexican Pizza">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Mexican Pizza</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Tortilla, Cheese, Refried Beans, Salsa, jalapeno, onion, chicken, sour cream, cilantro</p>
+                        <p><strong>Calories:</strong> 500</p>
+                        <p><strong>Time to Cook:</strong> 10 minutes</p>
+                        <p><strong>Recipe:</strong> Assemble in air fryer. 400 Degrees for 5 minutes. Add cilantro, salsa and source cream after it's out.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all mostpopular lunch card">
+                    <div class="cf-item-pic">
+                        <img src="img/clubsandwich.jpg" alt="Club Sandwich">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Club Sandwich</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Bread, Turkey, Bacon, Lettuce, Tomato, Mayo, Tomato</p>
+                        <p><strong>Calories:</strong> 400</p>
+                        <p><strong>Time to Cook:</strong> 7 minutes</p>
+                        <p><strong>Recipe:</strong> Assemble ingredients between toasted bread slices.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all mostpopular dinner card">
+                    <div class="cf-item-pic">
+                        <img src="img/Chicken Tikka.jpg" alt="Chicken Tikka Masala">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Chicken Tikka Masala</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Chicken, Tikka Sauce, Tortillas, Onion, Green Pepper, garlic</p>
+                        <p><strong>Calories:</strong> 500</p>
+                        <p><strong>Time to Cook:</strong> 30 minutes</p>
+                        <p><strong>Recipe:</strong> Cook chicken (oven/grill), sautae onion and green pepper until soft, combine chicken, onion, green pepper and sauce. Warm up tortillas and add garlic.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all dinner card">
+                    <div class="cf-item-pic">
+                        <img src="img/chickenbaconalfredo.jpg" alt="Chicken Bacon Alfredo">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Chicken Bacon Alfredo</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Chicken, Bacon, Alfredo Sauce, Pasta, Parmesan</p>
+                        <p><strong>Calories:</strong> 600</p>
+                        <p><strong>Time to Cook:</strong> 25 minutes</p>
+                        <p><strong>Recipe:</strong> Cook pasta, add sauce and cooked chicken and bacon.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all lunch dinner card">
+                    <div class="cf-item-pic">
+                        <img src="img/Chicken Patty Sandwich.jpg" alt="Chicken Patty Sandwich">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Chicken Patty Sandwich</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Chicken breast, Lettuce, Tomato, Cheese, Bun, Mayo</p>
+                        <p><strong>Calories:</strong> 350</p>
+                        <p><strong>Time to Cook:</strong> 15 minutes</p>
+                        <p><strong>Recipe:</strong> Cook chicken breast, assemble sandwich with veggies and mayo on a toasted bun. Serve with cottage cheese or fries.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all mostpopular dinner card">
+                    <div class="cf-item-pic">
+                        <img src="img/bbqchickenpizza.jpg" alt="BBQ Chicken Tortilla Pizza">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>BBQ Chicken Tortilla Pizza</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Tortilla, Chicken, BBQ Sauce, Cheese, Onions, Jalapenos, Cilantro</p>
+                        <p><strong>Calories:</strong> 450</p>
+                        <p><strong>Time to Cook:</strong> 10 minutes</p>
+                        <p><strong>Recipe:</strong> Assemble pizza in air fryer. Lay base of BBQ. Add chicken, onion, jalapeno and cheese. Cook in air fryer at 400 degrees for 5 minutes. Top with cilantro.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all breakfast healthy card">
+                    <div class="cf-item-pic">
+                        <img src="img/avacadotoastegg.jpg" alt="Avocado Breakfast Sandwich">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Avocado Breakfast Sandwich</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Bread, Avocado, Egg, Everything but the Bagel Seasoning, Cheese</p>
+                        <p><strong>Calories:</strong> 300</p>
+                        <p><strong>Time to Cook:</strong> 10 minutes</p>
+                        <p><strong>Recipe:</strong> Toast bread, scramble 2 eggs, add avocado and toppings, and serve.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all dinner card">
+                    <div class="cf-item-pic">
+                        <img src="img/BDub Wings.jpg" alt="BDubs Chicken Wings">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>BDubs Chicken Wings</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Frozen Breaded Chicken, Asian Zing, Honey BBQ, Ranch</p>
+                        <p><strong>Calories:</strong> 500</p>
+                        <p><strong>Time to Cook:</strong> 20 minutes</p>
+                        <p><strong>Recipe:</strong> Cook wings in air fryer, 10 minutes at 380, toss in sauce, and serve with fries.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all dinner card">
+                    <div class="cf-item-pic">
+                        <img src="img/bltpizza.jpg" alt="BLT Pizza">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>BLT Pizza</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Naan bread or tortilla, Olive Oil, Bacon, Jalapeno, Lettuce, Tomato, Mayo</p>
+                        <p><strong>Calories:</strong> 550</p>
+                        <p><strong>Time to Cook:</strong> 10 minutes</p>
+                        <p><strong>Recipe:</strong> Assemble in air fryer. Lay base sauce of olive oil, add bacon, jalapeno, tomato. Cook for 5 minutes at 400. Add lettuce and mayo drizzle.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all breakfast card">
+                    <div class="cf-item-pic">
+                        <img src="img/breafastbagel.jpg" alt="Breakfast Bagel">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Breakfast Bagel</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Bagel, Eggs, Sliced Cheese, Avocados, Cream Cheese, Eveyrthing Bagel Seasoning</p>
+                        <p><strong>Calories:</strong> 350</p>
+                        <p><strong>Time to Cook:</strong> 15 minutes</p>
+                        <p><strong>Recipe:</strong> Scramble 2 eggs, toast bagels, add cream cheese to bagels, place one egg on each bagel, place cheese on top, broil in oven to melt, add avocado, add everything bagel seasoning.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all breakfast card">
+                    <div class="cf-item-pic">
+                        <img src="img/breakfasttaco.jpg" alt="Breakfast Taco Scramble">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Breakfast Taco Scramble</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Tortilla, Eggs, Cheese, Salsa, Avocado</p>
+                        <p><strong>Calories:</strong> 400</p>
+                        <p><strong>Time to Cook:</strong> 10 minutes</p>
+                        <p><strong>Recipe:</strong> Scramble eggs, add to taco tortilla with toppings, and serve.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all breakfast card">
+                    <div class="cf-item-pic">
+                        <img src="img/breakfastbagel1.jpg" alt="Air Fryer Breakfast Bagel">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Air Fryer Breakfast Bagel</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Bagel, Eggs, Shredded Cheese, Seasoning</p>
+                        <p><strong>Calories:</strong> 350</p>
+                        <p><strong>Time to Cook:</strong> 7 minutes</p>
+                        <p><strong>Recipe:</strong> Line air pryer with parchment paper. Add cheese to bottom, Lay bagels holes up in air fryer, crack an eggs and place in bagel center, add cheese and seasoning to the top. Cook for 5 minutes at 400</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐☆☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all breakfast card">
+                    <div class="cf-item-pic">
+                        <img src="img/breakfasttacosunnyside.jpg" alt="Sunny Side Breakfast Tacos">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Sunny Side Breakfast Tacos</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Tortilla, Eggs, Cheese, Salsa, Avocado, Everything Bagel Seasoning</p>
+                        <p><strong>Calories:</strong> 400</p>
+                        <p><strong>Time to Cook:</strong> 15 minutes</p>
+                        <p><strong>Recipe:</strong> Cook eggs sunny side up, spread avocado on tortillas, add eggs to each tortilla, add cheese, melt in broiler.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all dinner card">
+                    <div class="cf-item-pic">
+                        <img src="img/buffalochickenwrap.jpg" alt="Buffalo Chicken Air Fryer Wraps">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Buffalo Chicken Wraps</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Chicken, Buffalo Sauce, Tortilla, Cream Cheese, Butter</p>
+                        <p><strong>Calories:</strong> 450</p>
+                        <p><strong>Time to Cook:</strong> 15 minutes</p>
+                        <p><strong>Recipe:</strong> Cook chicken, spread cream cheese on tortilla, add chicken, buffalo sauce, roll up wrap, assemble wrap, add butter to the tortilla and cook in air fryer. 4 minutes at 400?</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐☆☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all Dinner Lunch card">
+                    <div class="cf-item-pic">
+                        <img src="img/chickentikkagrilledcheese.jpg" alt="Chicken Tikka Grilled Cheese">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Chicken Tikka Grilled Cheese</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Bread, Shredded Cheese, Chicken Tikka</p>
+                        <p><strong>Calories:</strong> 500</p>
+                        <p><strong>Time to Cook:</strong> 10 minutes</p>
+                        <p><strong>Recipe:</strong> Add butter to two slices of bread. Add left over chicken tikka between them. Add cheese. Cook over medium heat on stove top until cheese is melty and bread is golden brown.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all dinner card">
+                    <div class="cf-item-pic">
+                        <img src="img/chickentikkapizza.jpg" alt="Chicken Tikka Pizza">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Chicken Tikka Pizza</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Pizza Dough, Chicken Tikka, Cheese, Onions</p>
+                        <p><strong>Calories:</strong> 550</p>
+                        <p><strong>Time to Cook:</strong> 25 minutes</p>
+                        <p><strong>Recipe:</strong> Bake dough, add toppings, and bake for 10 more minutes.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all dinner card">
+                    <div class="cf-item-pic">
+                        <img src="img/Cordeon Blue.jpg" alt="Chicken Cordon Bleu">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Chicken Cordon Bleu</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Chicken Breast, Ham, Swiss Cheese, Breadcrumbs</p>
+                        <p><strong>Calories:</strong> 600</p>
+                        <p><strong>Time to Cook:</strong> 30 minutes</p>
+                        <p><strong>Recipe:</strong> Stuff chicken with ham and cheese, coat with breadcrumbs, and bake.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all Dinner healthy card">
+                    <div class="cf-item-pic">
+                        <img src="img/Crusted Fish.jpg" alt="Crusted Fish">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Crusted Fish</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Frozen Crusted Fish, Sides</p>
+                        <p><strong>Calories:</strong> 350</p>
+                        <p><strong>Time to Cook:</strong> 20 minutes</p>
+                        <p><strong>Recipe:</strong> Follow instructions to cook fish. Cook up a side like vegetables, and cottage cheese.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐☆☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all dinner card">
+                    <div class="cf-item-pic">
+                        <img src="img/Jalano Bacon Cheese Stuffed Chicken.jpg" alt="Jalapeno Bacon Cheese Stuffed Chicken">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Jalapeno Bacon Chicken</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Chicken Breast, Jalapenos, Bacon, Cheese</p>
+                        <p><strong>Calories:</strong> 500</p>
+                        <p><strong>Time to Cook:</strong> 30 minutes</p>
+                        <p><strong>Recipe:</strong> Cut chicken slicing through middle but don't cut all the way through. Stuff chicken with jalapenos, bacon, and cheese, and bake in oven. Try 20-25 minutes at 400.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all snacks card">
+                    <div class="cf-item-pic">
+                        <img src="img/jalapenopoppercups.jpg" alt="Jalapeno Popper Cups">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Jalapeno Popper Cups</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Crescent Roll, Jalapenos, Cream Cheese, Cheddar Cheese</p>
+                        <p><strong>Calories:</strong> 200</p>
+                        <p><strong>Time to Cook:</strong> 15 minutes</p>
+                        <p><strong>Recipe:</strong> Mix cream cheese, jalapenos, and shredded cheese in bowl. Unroll crescent rolls and cut into squares. Places squares in muffin tins. Add filling. Sprinkle cheese on top. Cook in oven. I don't know how long.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all Dinner healthy card">
+                    <div class="cf-item-pic">
+                        <img src="img/Salmon.jpg" alt="Baked Salmon">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Baked Salmon</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Salmon Fillet, Lemon, Dill, Olive Oil</p>
+                        <p><strong>Calories:</strong> 300</p>
+                        <p><strong>Time to Cook:</strong> 20 minutes</p>
+                        <p><strong>Recipe:</strong> Season salmon, bake with lemon and dill until cooked through.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐☆☆</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all dinner lunch card">
+                    <div class="cf-item-pic">
+                        <img src="img/seattledog.jpg" alt="Seattle Dog">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Seattle Dog</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p><strong>Ingredients:</strong> Sausage (jalapeno cheddar), Cream Cheese (jalapeno honey), Grilled Onions, Jalapenos, Bun (name brand)</p>
+                        <p><strong>Calories:</strong> 400</p>
+                        <p><strong>Time to Cook:</strong> 15 minutes</p>
+                        <p><strong>Recipe:</strong> Cut up jalapenos and onions in half. Split hot dog so it cook in halves but is still connected. Pull the individual onion strands apart. Sauteee. While doing this, put a large pan on another burner and add the buns face down to toast. Remove onions and jalapenos. Cook sausage until it starts to blacken. Take the buns off and add cream cheese to them. Add the onions and jalapenos to them. Then add sausage.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+    </div>
+    <!-- Categories Filter Section End -->
+
+    <!-- Page Top Recipe Section Begin
+    <section class="page-top-recipe">
+        <div class="menu-banner">
+            <h2>Featured Recipes</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-lg-2">
+                    <div class="pt-recipe-item large-item">
+                        <div class="pt-recipe-img set-bg" data-setbg="img/bltpizza.jpg">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="pt-recipe-text">
+                            <span>March 10, 2024</span>
+                            <h3>BLT Pizza</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 order-lg-1">
+                    <div class="pt-recipe-item">
+                        <div class="pt-recipe-img set-bg" data-setbg="img/jalapenopoppercups.jpg">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="pt-recipe-text">
+                            <h4>Jalapeno Popper Cups</h4>
+                        </div>
+                    </div>
+                    <div class="pt-recipe-item">
+                        <div class="pt-recipe-img set-bg" data-setbg="img/salmon.jpg">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="pt-recipe-text">
+                            <h4>Baked Salmon</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 order-lg-3">
+                    <div class="pt-recipe-item">
+                        <div class="pt-recipe-img set-bg" data-setbg="img/seattledog.jpg">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="pt-recipe-text">
+                            <h4>Seattle Dog</h4>
+                        </div>
+                    </div>
+                    <div class="pt-recipe-item">
+                        <div class="pt-recipe-img set-bg" data-setbg="img/tuscanchicken.jpg">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="pt-recipe-text">
+                            <h4>Tuscan Chicen</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     Page Top Recipe Section End -->
+
+
+
+    <!-- Top Recipe Section Begin 
+    <section class="top-recipe spad">
+        <div class="section-title">
+            <h5>Top Recipes this Week</h5>
+        </div>
+        <div class="container po-relative">
+            <div class="plus-icon">
+                <i class="fa fa-plus"></i>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="top-recipe-item large-item">
+                        <div class="top-recipe-img set-bg" data-setbg="img/top-recipe/recipe-1.jpg">
+                            <i class="fa fa-plus"></i>
+                        </div>
+                        <div class="top-recipe-text">
+                            <div class="cat-name">Desert</div>
+                            <a href="#">
+                                <h4>One Pot Weeknight Lasagna Soup Recipe</h4>
+                            </a>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="top-recipe-item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="top-recipe-img set-bg" data-setbg="img/top-recipe/recipe-2.jpg">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="top-recipe-text">
+                                    <div class="cat-name">Vegan</div>
+                                    <a href="#">
+                                        <h4>One Pot Weeknight Lasagna Soup Recipe</h4>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-recipe-item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="top-recipe-img set-bg" data-setbg="img/top-recipe/recipe-3.jpg">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="top-recipe-text">
+                                    <div class="cat-name">Meat lover</div>
+                                    <a href="#">
+                                        <h4>Veggie soup with Mushrooms</h4>
+                                    </a>
+                                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                        magna aliqua. Lorem ipsum dolor sit amet, consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-recipe-item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="top-recipe-img set-bg" data-setbg="img/top-recipe/recipe-4.jpg">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="top-recipe-text">
+                                    <div class="cat-name">Desert</div>
+                                    <a href="#">
+                                        <h4>Caramel Ice Cream with Berries</h4>
+                                    </a>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-recipe-item">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <div class="top-recipe-img set-bg" data-setbg="img/top-recipe/recipe-5.jpg">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </div>
+                            <div class="col-sm-8">
+                                <div class="top-recipe-text">
+                                    <div class="cat-name">Desert</div>
+                                    <a href="#">
+                                        <h4>Freash Octopuse with lime juice</h4>
+                                    </a>
+                                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                                        magna aliqua. Lorem ipsum dolor sit amet, consectetur.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     Top Recipe Section End -->
+
+
+    <!-- Feature Recipe Section Begin 
+    <section class="feature-recipe">
+        <div class="section-title">
+            <h5>Featured Recipes</h5>
+        </div>
+        <div class="container po-relative">
+            <div class="plus-icon">
+                <i class="fa fa-plus"></i>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="fr-item">
+                        <div class="fr-item-img">
+                            <img src="img/feature-1.jpg" alt="">
+                        </div>
+                        <div class="fr-item-text">
+                            <h4>Sunday Brunch: Spaghetti and Eggs Recipe</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="fr-item">
+                        <div class="fr-item-img">
+                            <img src="img/feature-2.jpg" alt="">
+                        </div>
+                        <div class="fr-item-text">
+                            <h4>Sunday Brunch: Spaghetti and Eggs Recipe</h4>
+                            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+     Feature Recipe Section End -->
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="fs-left">
+                        <div class="logo">
+                            <a href="./index.html">
+                                <img src="img/cantinascoutlogo.png" alt="">
+                            </a>
+                        </div>
+                        <p>Catina Scout is a local watering hole, a 3rd place of sorts, for those looking for a casual bite to eat.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 offset-lg-1">
+                    <form action="#" class="subscribe-form">
+                        <h3>Subscribe to our newsletter</h3>
+                        <input type="email" placeholder="Your e-mail">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                    <div class="social-links">
+                        <a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a>
+                        <a href="#"><i class="fa fa-pinterest"></i><span>Pinterest</span></a>
+                        <a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a>
+                        <a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a>
+                        <a href="#"><i class="fa fa-youtube"></i><span>Youtube</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-text">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0.
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+ Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <!-- Search model -->
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">+</div>
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search model end -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <!--Card Script-->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var cards = document.querySelectorAll('.card');
+            cards.forEach(function(card) {
+                card.addEventListener('click', function() {
+                    card.classList.toggle('expanded');
+                });
+            });
+        });
+    </script>
+        
+</body>
+
+</html>
