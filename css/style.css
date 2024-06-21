@@ -343,31 +343,29 @@ ol {
 
 .header-banner {
     flex-grow: 1; /* Allow the banner to take remaining space */
-    height: 350px; /* Set a fixed height or vary as per your design */
+    height: 350px; /* Set a fixed height for desktop */
     overflow: hidden; /* Hide excess part of the image */
 }
 
 .header-banner img {
     width: 100%;
-    object-fit: contain; /* Entire image is scaled down to fit */
-    object-position: left center;
+    height: 350px; /* Match the height of the banner container */
+    object-fit: cover; /* Change from 'contain' to 'cover' to fill the area */
+    object-position: left center; /* Focus on the left part of the image */
 }
 
 @media (max-width: 768px) {
-    .header-left,
     .header-banner {
-        flex-basis: 100%; /* Stack on mobile */
-        width: 100%;
-		height: 150px; 
+        height: 300px; /* Increased height for mobile */
     }
 
-    .header-banner {
-        height: 150px; /* Smaller height on mobile */
-    }
-	.header-banner img {
-        object-position: center top; /* May need different positioning on small screens */
+    .header-banner img {
+        height: 300px; /* Ensure the image height matches the new container height */
+        object-fit: cover; /* Maintain 'cover' for better mobile appearance */
+        object-position: left center; /* Keep focus on the left on mobile as well */
     }
 }
+
 
 .header-section .logo {
 	float: left; /* Align logo to the left */
@@ -936,6 +934,9 @@ ol {
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
+	margin: 10px; /* Ensure margin is not too large */
+    width: calc(100% - 20px); /* Adjust width accounting for margin */
+    box-sizing: border-box; /* Include padding and border in the width */
 }
 
 .cf-item-details {
@@ -954,6 +955,14 @@ ol {
 .card:hover {
     transform: scale(1.05);
 }
+
+@media (max-width: 768px) {
+    .card {
+        margin: 5px; /* Smaller margins for mobile */
+        width: calc(100% - 10px); /* Adjust width for smaller margins */
+    }
+}
+
 
 
 /*---------------------
