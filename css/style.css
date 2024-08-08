@@ -2787,13 +2787,15 @@ ol {
 /* Responsive Google Form Styles */
 #orderform iframe {
     width: 100%; /* Makes the iframe width responsive */
-    min-height: 800px; /* Minimum height to ensure the form is usable */
-    /*height: 80vh;  Adjusts height based on the viewport height */
+	height:auto;
+    min-height: 2600px; /* Minimum height to ensure the form is usable */
+    height: 80vh;  /*Adjusts height based on the viewport height */
+	overflow: hidden;
     border: none; /* Removes default iframe border */
 }
 
 @media (max-width: 768px) {
     #orderform iframe {
-        min-height: 2000px; /* Increases minimum height on smaller devices */
+        min-height: 3000px; /* Increases minimum height on smaller devices */
     }
 }
