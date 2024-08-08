@@ -2788,7 +2788,7 @@ ol {
 #orderform iframe {
     width: 100%; /* Makes the iframe width responsive */
 	height:auto;
-    min-height: 2600px; /* Minimum height to ensure the form is usable */
+    min-height: 800px; /* Minimum height to ensure the form is usable */
     height: 80vh;  /*Adjusts height based on the viewport height */
 	overflow: hidden;
     border: none; /* Removes default iframe border */
@@ -2796,6 +2796,27 @@ ol {
 
 @media (max-width: 768px) {
     #orderform iframe {
-        min-height: 3000px; /* Increases minimum height on smaller devices */
+        min-height: 800px; /* Increases minimum height on smaller devices */
     }
+}
+
+.top-button-container {
+    text-align: center; /* Centers the button */
+    margin: 20px 0; /* Adds some space above and below the container */
+}
+
+.primary-btn {
+    display: inline-block;
+    font-size: 18px;
+    color: #fff;
+    background-color: #FC0254; /* Adjust the color to match your theme */
+    border: none;
+    padding: 12px 30px; /* Adjust padding to match the size of the subscribe button */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    border-radius: 50px; /* Gives the rounded corners */
+}
+
+.primary-btn:hover {
+    background-color: #D90429; /* Slightly darker shade on hover */
 }
