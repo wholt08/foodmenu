@@ -38,21 +38,31 @@
         <div class="loader"></div>
     </div>
 
+    <!--Let's try a brand new header-->
     <!-- Header Section Begin -->
+        <header class="new-header">
+        <div class="header-container">
+            <img src="img/scoutlogo.jpg" alt="Cantina Scout Logo" class="header-logo">
+         </div>
+        </header>
+    <!-- Header End -->
+
+
+    <!-- Header Section Begin 
     <header class="header-section">
         <div class="container">
-            <!--Logo
+            Logo
             <div class="header-left">
                 <a href="./index.html">
                     <img src="img/cantinascoutlogo.png" alt="Cantina Scout Logo">
                 </a>
                 <p class="tagline">Delicious Recipes & Restaurant Menus</p>
-            </div>-->
+            </div> 
             <div class="header-banner">
-                <img src="img/Scout Cantina Banner.png" alt="Delicious Food"> 
+                <img src="img/scoutlogo.jpg" alt="scout logo"> 
             </div>
         </div>
-    </header>
+    </header>-->
     <!-- Header End -->
 
     <!-- Categories Filter Section Begin -->
@@ -67,16 +77,75 @@
                         <ul>
                             <li class="active" data-filter="*">All</li>
                             <li data-filter=".mostpopular">Scout's Favorites</li>
+                            <li data-filter=".drinks">Drinks</li>
+                            <li data-filter=".food">Food</li>
+                            <li data-filter=".none">Order Now</li> <!--<a href="#orderformlink">Order Now</a>-->
+
+                            <!--Remove for the original
                             <li data-filter=".breakfast">Breakfast</li>
                             <li data-filter=".lunch">Lunch</li>
                             <li data-filter=".dinner">Dinner</li>
                             <li data-filter=".starter">Starters</li>
                             <li data-filter=".healthy">Healthy</li>
+                            -->
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="cf-filter" id="category-filter">
+                
+                <!--These are the new items-->
+                <div class="cf-item mix all mostpopular drinks card">
+                    <div class="cf-item-pic">
+                        <img src="img/margarita.jpg" alt="House Margherita">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>House Margarita</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p>Dive into the zest of our House Margarita, a timeless blend of tequila, fresh lime juice, and a splash of love. Perfectly balanced, it's a sip of sunshine in every glass. Whether you're toasting to a special occasion or just the end of a long day, our margarita is sure to lift your spirits.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all mostpopular food card">
+                    <div class="cf-item-pic">
+                        <img src="img/guac.jpg" alt="Chips & Guac">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Chips and Guac</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p>Crisp, golden tortilla chips paired with our creamy, freshly mashed guacamole—this duo is a match made in snack heaven. Made with ripe avocados, a hint of lime, and a sprinkle of salt, our guacamole is a crowd-pleaser that's as perfect for dipping as it is for devouring.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all drinks card">
+                    <div class="cf-item-pic">
+                        <img src="img/rainer.jpg" alt="rainer">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Rainer</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p>Enjoy a taste of the Pacific Northwest with a cold Rainier Beer. Known for its crisp, clean flavor and smooth finish, Rainier is a local legend that’s as refreshing as the mountain air. Grab a can, kick back, and relax—this beer is a tribute to laid-back days and adventurous spirits.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐</p>
+                    </div>
+                </div>
+                <!--thuhmbs up
+                <div class="cf-item mix all card">
+                    <div class="cf-item-pic">
+                        <img src="img/thumbsup.jpg" alt="Thumbs Up">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Thumbs Up for your Bartender</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p>Let your bartender know that you appreciate them with a thumbs up. </p>
+                    </div>
+                </div>-->
+
+
+                <!--Remove this for the original
                 <div class="cf-item mix all mostpopular dinner card">
                     <div class="cf-item-pic">
                         <img src="img/mexicanpizza.jpg" alt="Mexican Pizza">
@@ -422,10 +491,19 @@
                         <p><strong>Rating:</strong> ⭐⭐⭐⭐☆</p>
                     </div>
                 </div>
+                Remove this for the original-->
             </div>
         </div>   
     </div>
     <!-- Categories Filter Section End -->
+
+    <!-- Order Form Section Begin-->
+     <div id="orderform">
+        <div class="menu-banner">
+            <h2>Order</h2>
+        </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf9BFt4Zv8-oc1weuH-iRUvUshNzWR46cFJDa6i4m3g6YKaKQ/viewform?embedded=true" width="850" height="1800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
 
     <!-- Page Top Recipe Section Begin
     <section class="page-top-recipe">
@@ -648,7 +726,10 @@
                                 <img src="img/cantinascoutlogo.png" alt="">
                             </a>
                         </div>
-                        <p>Catina Scout is a local watering hole, a 3rd place of sorts, for those looking for a casual bite to eat.</p>
+                        <p><strong>Cantina Scout: Your Neighborhood Retreat</strong><br>
+                            Step into Cantina Scout, your cozy corner in the city where good food and good company converge. This is more than just a local spot; it's your third place away from home and work, offering a relaxed atmosphere perfect for unwinding over casual bites and refreshing drinks. Whether you're here to catch up with friends or enjoy a quiet moment alone, you're always welcome at our table.
+                            
+                            This version aims to evoke a warm, inviting feeling that emphasizes the restaurant as a comfortable and friendly place to spend time.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 offset-lg-1">

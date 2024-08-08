@@ -130,7 +130,7 @@ ol {
 }
 
 .spad {
-	padding-top: 100px;
+	padding-top: 10px;
 	padding-bottom: 100px;
 }
 
@@ -342,16 +342,18 @@ ol {
 }
 
 .header-banner {
-    flex-grow: 1; /* Allow the banner to take remaining space */
-    height: 350px; /* Set a fixed height for desktop */
-    overflow: hidden; /* Hide excess part of the image */
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    height: 300px; /* Adjust if you want more or less space */
+    padding: 20px 0; /* Top and bottom padding */
+    background: #fff; /* Sets a white background, adjust as needed */
 }
 
 .header-banner img {
-    width: 100%;
-    height: 350px; /* Match the height of the banner container */
-    object-fit: cover; /* Change from 'contain' to 'cover' to fill the area */
-    object-position: left center; /* Focus on the left part of the image */
+    height: 300px; /* Increase the size of the logo */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensures the image fits without stretching */
 }
 
 @media (max-width: 768px) {
@@ -368,7 +370,7 @@ ol {
 
 
 .header-section .logo {
-	float: left; /* Align logo to the left */
+	float: right;  /*Align logo to the center */
     margin: 0;
 }
 
@@ -779,7 +781,7 @@ ol {
 -----------------------*/
 
 .categories-filter-section {
-	padding-bottom: 120px;
+	padding-bottom: 20px;
 }
 
 .categories-filter-section .section-title {
@@ -934,9 +936,7 @@ ol {
     position: relative;
     cursor: pointer;
     transition: all 0.3s ease;
-	margin: 10px; /* Ensure margin is not too large */
-    width: calc(100% - 20px); /* Adjust width accounting for margin */
-    box-sizing: border-box; /* Include padding and border in the width */
+	
 }
 
 .cf-item-details {
@@ -957,9 +957,8 @@ ol {
 }
 
 @media (max-width: 768px) {
-    .card {
-        margin: 5px; /* Smaller margins for mobile */
-        width: calc(100% - 10px); /* Adjust width for smaller margins */
+    .card:hover {
+        transform: none; /* Disable scaling on mobile */
     }
 }
 
@@ -2763,4 +2762,38 @@ ol {
 	.map .map-content {
 		right: calc(50% - 131px);
 	}
+}
+
+/* New Header Styles */
+.new-header {
+    width: 100%; /* Ensures the header spans the full width of the page */
+    background-color: #fff; /* Adjust background color if needed */
+    /*padding: 20px 0;  Adds some vertical padding */
+    /*box-shadow: 0 2px 5px rgba(0,0,0,0.1);  Optional: adds a subtle shadow for depth */
+}
+
+.header-container {
+    width: 100%; /* Full width to ensure centering context */
+    display: flex; /* Utilizes flexbox for easy centering */
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+}
+
+.header-logo {
+    max-height: 300px; /* Limits the logo size while maintaining aspect ratio */
+    width: auto; /* Maintains the aspect ratio of the logo */
+}
+
+/* Responsive Google Form Styles */
+#orderform iframe {
+    width: 100%; /* Makes the iframe width responsive */
+    min-height: 800px; /* Minimum height to ensure the form is usable */
+    /*height: 80vh;  Adjusts height based on the viewport height */
+    border: none; /* Removes default iframe border */
+}
+
+@media (max-width: 768px) {
+    #orderform iframe {
+        min-height: 2000px; /* Increases minimum height on smaller devices */
+    }
 }
