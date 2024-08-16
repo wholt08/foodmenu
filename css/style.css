@@ -2809,7 +2809,7 @@ ol {
     display: inline-block;
     font-size: 18px;
     color: #fff;
-    background-color: #FC0254; /* Adjust the color to match your theme */
+    background-color: #000000; /* Adjust the color to match your theme */
     border: none;
     padding: 12px 30px; /* Adjust padding to match the size of the subscribe button */
     cursor: pointer;

@@ -79,7 +79,7 @@
                             <li data-filter=".mostpopular">Scout's Favorites</li>
                             <li data-filter=".drinks">Drinks</li>
                             <li data-filter=".food">Food</li>
-                            <li data-filter=".none">Order Now</li> <!--<a href="#orderformlink">Order Now</a>-->
+                            <li data-filter=".none"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf9BFt4Zv8-oc1weuH-iRUvUshNzWR46cFJDa6i4m3g6YKaKQ/viewform?usp=sf_link">Order Now</a></li> 
 
                             <!--Remove for the original
                             <li data-filter=".breakfast">Breakfast</li>
@@ -119,16 +119,40 @@
                         <p><strong>Rating:</strong> ⭐⭐⭐⭐⭐</p>
                     </div>
                 </div>
-                <div class="cf-item mix all drinks card">
+                <div class="cf-item mix all food card">
                     <div class="cf-item-pic">
-                        <img src="img/rainer.jpg" alt="rainer">
+                        <img src="img/salsa.jpg" alt="Salsa">
                     </div>
                     <div class="cf-item-text">
-                        <h5>Rainier</h5>
+                        <h5>Salsa</h5>
                     </div>
                     <div class="cf-item-details">
-                        <p>Enjoy a taste of the Pacific Northwest with a cold Rainier Beer. Known for its crisp, clean flavor and smooth finish, Rainier is a local legend that’s as refreshing as the mountain air. Grab a can, kick back, and relax—this beer is a tribute to laid-back days and adventurous spirits.</p>
+                        <p>A gentle blend of ripe tomatoes, crisp onions, and mild jalapeños. Perfect for dipping or enhancing any dish with authentic Southwest flavors.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all drinks card">
+                    <div class="cf-item-pic">
+                        <img src="img/beer.jpg" alt="beer">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>Beer</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p>Explore our curated selection of beers from around the world. From the crisp, golden refreshment of Corona and Pacifico to the rich, local zest of Rainier and the adventurous hints of citrus in Fremont Sky Kraken—each beer promises a unique taste experience. Perfect for savoring on their own or pairing with our dishes. Cheers to good times and great beer!</p>
                         <p><strong>Rating:</strong> ⭐⭐⭐</p>
+                    </div>
+                </div>
+                <div class="cf-item mix all drinks card">
+                    <div class="cf-item-pic">
+                        <img src="img/seltzer.jpg" alt="seltzer">
+                    </div>
+                    <div class="cf-item-text">
+                        <h5>San Juan Seltzer</h5>
+                    </div>
+                    <div class="cf-item-details">
+                        <p>Experience the crisp, refreshing taste of San Juan Seltzer. Crafted in the heart of the Pacific Northwest, this zero-sugar seltzer offers a pure, clean finish with a hint of natural fruit flavor—perfect for a light and effervescent refreshment.</p>
+                        <p><strong>Rating:</strong> ⭐⭐⭐⭐</p>
                     </div>
                 </div>
                 <!--thuhmbs up
@@ -497,18 +521,18 @@
     </div>
     <!-- Categories Filter Section End -->
 
-    <!-- Order Form Section Begin-->
+    <!-- Order Form Section Begin
      <div id="orderform">
         <div class="menu-banner">
             <h2>Order</h2>
         </div>
         <iframe id="googleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSf9BFt4Zv8-oc1weuH-iRUvUshNzWR46cFJDa6i4m3g6YKaKQ/viewform?embedded=true" width="850" height="1800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-    </div>
+    </div>-->
 
+<!--button to refresh page
     <div class="top-button-container">
         <button onclick="refreshPage()" class="primary-btn">Start Over</button>
     </div>
-    
 
     <script>
         function refreshPage() {
@@ -520,7 +544,34 @@
                 window.location.reload(true);
             }, 100); // Delay of 100 milliseconds
         }
-    </script>
+    </script>-->
+
+<!--Trying to show form is sent
+<div id="successMessage" style="display: none; position: fixed; top: 20px; left: 50%; transform: translateX(-50%); background-color: #4CAF50; color: white; padding: 15px; border-radius: 5px; z-index: 1000;">
+    Your form has been successfully submitted!
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    var iframe = document.getElementById('googleForm');
+    var successMessage = document.getElementById('successMessage');
+    var formSubmitted = false;
+
+    window.addEventListener('message', function(event) {
+        if (event.origin !== "https://docs.google.com") return;
+        
+        if (event.data === 'submitted') {
+            if (!formSubmitted) {
+                successMessage.style.display = 'block';
+                formSubmitted = true;
+                setTimeout(function() {
+                    successMessage.style.display = 'none';
+                }, 5000);
+            }
+        }
+    });
+});
+</script>-->
         
 
 
